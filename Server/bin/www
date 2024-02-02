@@ -1,0 +1,8 @@
+const { server, app } = require("../app");
+require("../websocket/websocket")
+require("../websocket/broadcast")
+const port = 4000;
+
+server.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
